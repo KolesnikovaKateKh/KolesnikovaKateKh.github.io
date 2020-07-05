@@ -54,9 +54,59 @@ body {
     text-align: center;
     line-height: 50px;
     font-size: 21px;
-
 }
 .menu a:hover {
     background-color: #2c71b8;
     color: white;
+}
+.form {
+    position: relative;
+    width: 200px;
+}
+[type="text"] {
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid #2c71b8;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin-top: 5px ;
+
+}
+::placeholder {
+    color: #568dc6;
+    font-size: 21px;
+    padding-left: 20px;
+}
+[type="submit"] {
+    height: 30px;
+    width: 30px;
+    background-color: #2c71b8;
+    border: 1px solid #2c71b8;
+    box-sizing: border-box;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-image: url(./foto/icon\ \(4\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.second {
+    position: relative;
+}
+
+.backet {
+    background-color: white;
+    background-image: url(./foto/icon\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-top: 5px;
+    right: 0px;
+    margin-left: 30px;
 }
