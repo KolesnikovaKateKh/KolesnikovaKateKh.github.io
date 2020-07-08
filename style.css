@@ -110,3 +110,23 @@ body {
     right: 0px;
     margin-left: 30px;
 }
+.second_list {
+    display: none;
+    background-color: #2c71b8;
+    color: white;
+  }
+  .menu li:hover > ul{
+    display: block;
+ }
+ .second_list li {
+     width: 286px;
+     background-color: #2c71b8;
+     
+ }
+.second_list li a:hover {
+    color: #2c71b8;
+    background-color: #fafbfc;
+}
+.second_list a {
+    color: white;
+}
