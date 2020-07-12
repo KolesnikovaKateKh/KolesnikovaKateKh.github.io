@@ -1,15 +1,26 @@
 *{
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     background-image: url(./foto/patt.png);
 }
+@font-face {
+    font-family: Myriad Pro Regular;
+    src: url(Fonts/ofont.ru_Myriad\ Pro.ttf); 
+    font-family: 'Roboto', sans-serif;
+    src: url(Fonts/ofont.ru_Roboto\ Light.ttf); 
+    /* font-family: Robotobolt;
+    src: url(Fonts/Robotobold.ttf)  */
+
+   }
 .container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 .row {
     margin-left: -15px;
@@ -34,6 +45,7 @@ body {
 .header {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 25px 0;
+    max-height: 100px;
 }
 .logo {
     margin-top: 7px;
@@ -80,7 +92,7 @@ body {
     font-size: 21px;
     padding-left: 20px;
 }
-[type="submit"] {
+.search_icon {
     height: 30px;
     width: 30px;
     background-color: #2c71b8;
@@ -114,22 +126,213 @@ body {
 .second_list {
     display: none;
     background-color: #2c71b8;
-    color: white;
-    
+    color: white; 
+    margin-left: -1px;
   }
-  .menu li:hover > ul{
+ .menu li:hover .top-menu ul {
     display: block;
  }
  .second_list li {
     width: 286px;
-    background-color: #2c71b8;
-     
-     
+    background-color: #2c71b8;    
  }
+
+.second_list a {
+    color: white;
+}
+
+.menu > li:hover a  {
+    background-color: #2c71b8;
+    color: #fafbfc;
+}
 .second_list li a:hover {
     color: #2c71b8;
     background-color: #fafbfc;
+    
 }
-.second_list a {
+.menu :nth-child(2) {
+    height: 50px;
+}
+
+/* Слайдер */
+.slider {
+    height: 400px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(252, 251, 251);
+    border-bottom: 1px solid rgb(252, 251, 251);
+    background-color: rgb(14, 13, 13, 0.20)
+}
+/* Основная часть */
+.main-part {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.side-bar {
+    width: 270px;
+    background-color: rgb(252, 251, 251, 0.20);
+    height: 845px;
+    border-right: 1px solid rgb(252, 251, 251);
+    
+
+}
+.prodacts-part {
+    width: 870px;
+    /* border: 1px solid rgb(252, 251, 251); */
+    margin-left: 300px;
+    position: absolute;
+    top: 0;
+    height: 800px;
+}
+ul li a {
+    font-size: 14px;
+    color: #acc1dd;
+    text-decoration: none;
+}
+ul li {
+    float: left;
+    font-size: 14px;
+    color: #acc1dd;
+    font-family: Myriad Pro Regular;
+}
+.element {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.list-3 li:hover a {
+    text-decoration: underline;
+}
+.list-3 {
+    margin-top: 30px;
+    
+}
+.Laptops {
+    font-size: 48px;
     color: white;
+    padding-top: 19px;
+    font-family: Myriad Pro Regular;
+
+}
+.list-3:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.filtr {
+    border:1px solid rgb(252, 251, 251);
+    height: 40px;
+    width: 270px;
+    position: absolute;
+    right: 0;
+    top: 64px;
+}
+.device_1, 
+.device_2, 
+.device_3 {
+    width: 270px;
+    height: 650px;
+    border:1px solid rgb(252, 251, 251);
+    float: left;
+    margin-top: 50px;
+    position: relative;
+    background-color: rgb(	44, 113, 184, 0.75);
+
+}
+.device_1,
+.device_2 {
+    margin-right: 29px;
+}
+.monitor {
+    width: 100%;
+    background-color: rgb(252, 251, 251, 0.7);
+    height: 180px;
+    border-bottom:1px solid rgb(252, 251, 251);
+    margin-bottom: 15px;
+    position: relative;
+}
+.monitor_2 {
+    margin-top: 45px;
+    margin-left: 84px;
+}
+.Device_name {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(252, 251, 251);
+    padding-left: 15px;
+    font-family: Roboto;
+}
+p {
+    color: rgb(252, 251, 251);
+    font-size: 21px;
+    font-family: Roboto;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.thick_font {
+    font-weight: 700;
+}
+.prace {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+sup {
+    vertical-align: super;
+    font-size: 30px;
+}
+.monitor_3 {
+    margin-top: 41px;
+    margin-left: 107px;
+}
+.frame,
+.frame_1
+ {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #548cc5;
+}
+.frame {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.frame_1 {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+.icon {
+    padding: 4px;
+}
+.icon_1 {
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.button,
+.button_2 {
+    width: 210px;
+    height: 50px;
+    border: 1px solid white;
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 510px;
+    background-color: rgb(252, 251, 251, 0);
+    font-weight: 700;
+    font-size: 21px;
+}
+.button_2 {
+    top: 575px;
+    background-color: rgb(252, 251, 251, 0.20);
+}
+.basket_white {
+    padding-left: 12px;
+}
+.monitor .frame_1 :hover icon_1 {
+    /* background-image: url(./foto/icon\ \(7\).png); */
+    background-color: black;
+
 }
